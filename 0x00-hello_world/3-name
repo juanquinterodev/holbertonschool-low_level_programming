@@ -1,0 +1,3 @@
+#!/bin/bash
+gcc $CFILE > cisfun#!/bin/bash
+gcc $CFILE > cisfun
