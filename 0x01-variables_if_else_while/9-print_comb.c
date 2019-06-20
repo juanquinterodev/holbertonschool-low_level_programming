@@ -11,11 +11,15 @@
 int main(void)
 {
 int dig;
-for (dig = 48; dig <= 58; dig++)
+for (dig = 48; dig <= 57; dig++)
 {
 putchar(dig);
-putchar(32);
-putchar(44);
+if (dig != 57)
+{
+putchar(',');
+putchar(' ');
 }
+}
+putchar('\n');
 return (0);
 }
