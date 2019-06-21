@@ -15,9 +15,9 @@ int main(void)
 	if (num1 >= num2)
 	continue;
 	else
-	putchar ((number1 % 10) + '0');
-	putchar ((number2 % 10) + '0');
-	if (number1 == 8 && number2 == 9)
+	putchar ((num1 % 10) + '0');
+	putchar ((num2 % 10) + '0');
+	if (num1 == 8 && num2 == 9)
 	{
 	}
 	else
