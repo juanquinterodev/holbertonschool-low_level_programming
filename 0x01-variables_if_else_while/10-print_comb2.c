@@ -1,31 +1,26 @@
-#include <stdio.h>
-/*
-* main - Enter point
-*
-* Return: Always 0 (Success)
-*/
-
+##include <stdio.h>
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void)
 {
-int a, b, coma, espacio;
-espacio = 32;
-coma = 44;
-for (a = 48; a <= 57; a++)
-{
-for (b = 48; b <= 57; b++)
-{
-putchar(a);
-if (b <= 57)
-{
-putchar(b);
-if (b != 57 || a != 57)
-{
-putchar(coma);
-putchar(espacio);
-}
-}
-}
-};
-putchar('\n');
-return (0);
+	int num1, num2;
+
+	for (num1 = 0; num1 < 10; num1++)
+	{
+	for (num2 = 0; num2 < 10; num2++)
+	{
+	putchar ((num1 % 10) + '0');
+	putchar ((num2 % 10) + '0');
+	if (num1 == 9 && num2 == 9)
+	continue;
+	else
+	putchar (',');
+	putchar (' ');
+	}
+	}
+	putchar('\n');
+	return (0);
 }
