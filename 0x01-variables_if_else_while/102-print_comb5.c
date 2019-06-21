@@ -6,14 +6,15 @@
  */
 int main(void)
 {
-	int num1, num2;
-	for (num1 = 0; num1 < 10; num1++)
+	int number1, number2;
+
+	for (number1 = 0; number1 < 10; number1++)
 	{
-	for (num2 = 0; num2 < 10; num2++)
+	for (number2 = 0; number2 < 10; number2++)
 	{
-	putchar ((num1 % 10) + '0');
-	putchar ((num2 % 10) + '0');
-	if (num1 == 9 && num2 == 9)
+	putchar ((number1 % 10) + '0');
+	putchar ((number2 % 10) + '0');
+	if (number1 == 9 && number2 == 9)
 	continue;
 	else
 	putchar (',');
