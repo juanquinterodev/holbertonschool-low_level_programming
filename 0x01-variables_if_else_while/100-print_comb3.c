@@ -6,13 +6,13 @@
  */
 int main(void)
 {
-	int number1, number2;
+	int num1, num2;
 
-	for (number1 = 0; number1 < 10; number1++)
+	for (num1 = 0; num1 < 10; num1++)
 	{
-	for (number2 = 0; number2 < 10; number2++)
+	for (num2 = 0; num2 < 10; num2++)
 	{
-	if (number1 == number2 || number1 > number2)
+	if (num1 >= num2)
 	continue;
 	else
 	putchar ((number1 % 10) + '0');
