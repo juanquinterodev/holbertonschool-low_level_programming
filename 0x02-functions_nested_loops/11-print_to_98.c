@@ -2,38 +2,43 @@
 #include <stdio.h>
 
 /**
- * print_to_98 - Prints the numbers from n to 98
- * @n: Number to start loop
- * Return: Printed secuency
+ * print_to_98 - check the code for Holberton School students.
+ *
+ * @n: n is a variable name
+ *
+ * Return: Always 0.
  */
-
 void print_to_98(int n)
 {
-	int num;
+int c;
 
-	num = n;
+if (n < 98)
+{
+for (c = n; c <= 98; c++)
+{
+if (c == 98)
+printf("%d\n", c);
+else
+printf("%d, ", c);
+}
+}
 
-	while (n <= 98)
-	{
-		if (n != 98 && n < 0)
-		{
-			printf("%d, ", n);
-		} else if (n != 98 && n >= 0)
-		{
-			printf("%d, ", n);
-		} else if (n == 98)
-			printf("%d\n", n);
-		n++;
-	};
+if (n > 98)
+{
+for (c = n; c >= 98; c--)
+{
+if (c == 98)
+printf("%d\n", c);
+else
+printf("%d, ", c);
+}
+}
 
-
-	while (num >= 98)
-	{
-		if (num > 98)
-		{
-			printf("%d, ", num);
-		} else
-			printf("%d\n", num);
-		num--;
-	}
+else
+{
+if (n == 98)
+{
+printf("%d\n", n);
+}
+}
 }
