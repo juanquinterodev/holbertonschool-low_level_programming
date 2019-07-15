@@ -1,39 +1,37 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 #include <ctype.h>
 /**
-* main - Program that adds positive numbers
-*@argc: argument count
-*@argv: string of pointers
-*Return: 0
-*/
+ * main - adds positive numbers
+ *
+ * @argc: number of things in the command line
+ *
+ * @argv: array of string values
+ *
+ * Return: 0 if no number is passed or 1 if one of the number contains
+ * symbols that are not digits
+ *
+ */
 int main(int argc, char *argv[])
 {
-	unsigned int i, sum, num;
+	int s = 0, c, d;
 
-	sum = 0;
 	if (argc < 1)
 	{
-		printf("%d\n", 0);
+		printf("0\n");
 	}
-	while (argc-- && argc > 0)
+	for (c = 1; c < argc; c++)
 	{
-
-		for (i = 0; argv[argc][i] != '\0'; i++)
+		for (d = 0; *(*(argv + c) + d) != '\0'; d++)
 		{
-
-
-			if (!(isdigit(argv[argc][i])))
+			if (!isdigit(*(*(argv + c) + d)))
 			{
-
 				printf("Error\n");
 				return (1);
 			}
 		}
-		num = atoi(argv[argc]);
-		sum += num;
+		s += atoi(*(argv + c));
 	}
-	printf("%d\n", sum);
-	return (sum);
+	printf("%d\n", s);
+	return (s);
 }
