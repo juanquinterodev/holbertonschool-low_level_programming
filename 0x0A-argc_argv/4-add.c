@@ -1,36 +1,39 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <ctype.h>
-
 /**
- * main - check the code for Holberton School students.
- * @argc: count of arguments
- * @argv: vector with content of arguments
- *
- * Return: Always 0.
- */
+* main - Program that adds positive numbers
+*@argc: argument count
+*@argv: string of pointers
+*Return: 0
+*/
 int main(int argc, char *argv[])
 {
-int i, sum = 0;
-if (argc != 1)
-{
-	for (i = 1; argv[i]; i++)
+	unsigned int i, sum, num;
+
+	sum = 0;
+	if (argc < 1)
 	{
-		if (atoi(argv[i]) > 0)
-			sum += atoi(argv[i]);
-		else if (isdigit(*argv[i]) && atoi(argv[i]) > 0)
+		printf("%d\n", 0);
+	}
+	while (argc-- && argc > 0)
+	{
+
+		for (i = 0; argv[argc][i] != '\0'; i++)
 		{
-			sum += atoi(argv[i]);
+
+
+			if (!(isdigit(argv[argc][i])))
+			{
+
+				printf("Error\n");
+				return (1);
+			}
 		}
-		else
-		{
-			printf("Error\n");
-			return (1);
-		}
+		num = atoi(argv[argc]);
+		sum += num;
 	}
 	printf("%d\n", sum);
-}
-else
-	printf("0\n");
-return (0);
+	return (sum);
 }
