@@ -1,37 +1,38 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
-/**
- * main - adds positive numbers
- *
- * @argc: number of things in the command line
- *
- * @argv: array of string values
- *
- * Return: 0 if no number is passed or 1 if one of the number contains
- * symbols that are not digits
- *
- */
-int main(int argc, char *argv[])
-{
-	int s = 0, c, d;
 
-	if (argc < 1)
+/**
+ * main - adds numbers
+ * @argc: number of arguments passed to the function
+ * @argv: argument vector of pointers to strings
+ *
+ * Return: 0 if no errors, else 1
+ */
+
+
+
+
+int main(int argc, char *argv[])
+
+{
+	int a = 0, i, j;
+
+	for (i = 1; i < argc; i++)
 	{
-		printf("0\n");
-	}
-	for (c = 1; c < argc; c++)
-	{
-		for (d = 0; *(*(argv + c) + d) != '\0'; d++)
+		for (j = 0; argv[i][j]; j++)
 		{
-			if (!isdigit(*(*(argv + c) + d)))
+			if (isdigit(argv[i][j]) == 0)
 			{
-				printf("Error\n");
+				puts("Error");
 				return (1);
 			}
 		}
-		s += atoi(*(argv + c));
 	}
-	printf("%d\n", s);
-	return (s);
+	for (i = 1; i < argc; i++)
+	{
+		a += atoi(argv[i]);
+	}
+	printf("%d\n", a);
+	return (0);
 }
