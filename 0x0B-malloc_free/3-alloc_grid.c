@@ -39,7 +39,7 @@ else
 		}
 
 	for (j = 0; j <= i; j++)
-		ar[i][j] = 0;
+		ag[i][j] = 0;
 	}
 
 return (ag);
