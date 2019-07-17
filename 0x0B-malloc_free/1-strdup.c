@@ -18,15 +18,16 @@ while (str[i] != '\0')
 {
 i++;
 }
-c = malloc(i * (sizeof(char)));
+c = malloc(i + 1 * (sizeof(char)));
 
 if (c == NULL)
 {
 return (NULL);
 }
-for (j = 0; j < i; j++)
+for (j = 0; j <= i; j++)
 {
 c[j] = str[j];
 }
+c[j] = '\0';
 return (c);
 }
