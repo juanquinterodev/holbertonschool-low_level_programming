@@ -5,6 +5,7 @@
 * free_grid - free a 2 dimensional grid
 * @grid: grid of integer
 * @height: height of the grid
+*
 * Return: Nothing
 */
 void free_grid(int **grid, int height)
