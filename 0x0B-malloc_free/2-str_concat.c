@@ -1,4 +1,5 @@
 #include <stdlib.h>
+#include "holberton.h"
 /**
  * str_concat - concatenates two strings
  * @s1: string give
@@ -17,22 +18,22 @@ char *str_concat(char *s1, char *s2)
 		s1 = "";
 	if (s2 == NULL)
 		s2 = "";
-	while (s1[rec1] != '\0')
+	while (s1[c1] != '\0')
 	{
 		c1++;
 	}
-	while (s2[rec2] != '\0')
+	while (s2[c2] != '\0')
 	{
 		c2++;
 	}
-	aux = rec1 + rec2 + 1;
+	aux = c1 + c2 + 1;
 
 	c = (char *) malloc(aux * sizeof(char));
 	if (c == NULL)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < rec1; i++)
+	for (i = 0; i < c1; i++)
 	{
 		c[i] = s1[i];
 	}
@@ -41,5 +42,5 @@ char *str_concat(char *s1, char *s2)
 		c[j] = s2[x];
 			x++;
 	}
-	return (c);
+		return (c);
 }
