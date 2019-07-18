@@ -1,4 +1,3 @@
-#include <stdio.h>
 #include <stdlib.h>
 /**
  * malloc_checked - checks memory
