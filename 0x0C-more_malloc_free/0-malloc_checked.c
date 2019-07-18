@@ -3,7 +3,7 @@
 /**
  * malloc_checked - checks memory
  * @b: integer parameter
- * Return: Nothing
+ * Return: pointer
  */
 
 void *malloc_checked(unsigned int b)
