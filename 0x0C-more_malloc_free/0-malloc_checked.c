@@ -15,5 +15,6 @@ if (p == NULL)
 {
 exit(98);
 }
+else
 return (p);
 }
