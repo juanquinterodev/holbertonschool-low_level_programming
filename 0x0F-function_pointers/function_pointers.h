@@ -1,0 +1,5 @@
+#ifndef _HOLBERTON_H_
+#define _HOLBERTON_H_
+void print_name(char *name, void (*f)(char *));
+void array_iterator(int *array, unsigned int size, void (*action)(int));
+#endif
