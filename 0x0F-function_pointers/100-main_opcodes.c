@@ -1,9 +1,8 @@
-main_upcodes.c
+int main(int argc, char *argv[])
 {
-if (argc == NULL)
-printf ("Error, \n");
-exit (1);
-if (argc < 0)
-printf ("Error, \n")
-exit (2);
-
+if (argc != 2)
+printf ("Error, \n", exit(1));
+if atoi (argv(1) < 0)
+printf ("Error, \n", exit (2));
+return (0);
+}
