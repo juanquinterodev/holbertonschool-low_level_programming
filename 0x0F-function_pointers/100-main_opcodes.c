@@ -16,8 +16,8 @@ exit(1);
 }
 if (atoi(argv[1]) < 0)
 {
-printf ("Error\n");
-exit (2);
+printf("Error\n");
+exit(2);
 }
 return (0);
 }
