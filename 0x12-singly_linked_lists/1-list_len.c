@@ -1,7 +1,7 @@
 #include "lists.h"
-#include <stdio.h>
+#include <stdlib.h>
 /**
-* print_list - prints all the elements of the list.
+* list_len - returns numbers of elements of the list.
 * @h: node parameter
 * Return: size of list
 */
