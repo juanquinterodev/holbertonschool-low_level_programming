@@ -11,9 +11,9 @@ int _strlen(char *s)
 {
 	int sum;
 
-	for (sum = 0; *s != '\0'; sum++)
+	for (sum = 0; *s != '\0'; s++)
 	{
-		;
+		sum++;
 	}
 	return (sum);
 }
@@ -33,7 +33,7 @@ return (NULL);
 }
 buf = *head;
 buf = malloc(sizeof(list_t));
-if (buf != NULL)
+if (buf == NULL)
 {
 return (NULL);
 }
