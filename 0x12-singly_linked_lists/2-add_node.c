@@ -34,11 +34,13 @@ return (NULL);
 buf = *head;
 buf = malloc(sizeof(list_t));
 if (buf != NULL)
+{
+return (NULL);
+}
 buf->str = strdup(str);
 if (buf->str == NULL)
 {
 free(buf);
-return (NULL);
 }
 buf->len = _strlen(buf->str);
 buf->next = *head;
