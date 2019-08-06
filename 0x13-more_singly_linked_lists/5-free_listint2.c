@@ -10,11 +10,13 @@ void free_listint2(listint_t **head)
 	listint_t *next;
 
 	if (head != NULL)
-	while (actual)
 	{
+		while (actual)
+		{
 		next = actual->next;
 		free(actual);
 		actual = next;
+		}
 	}
 	*head = NULL;
 }
