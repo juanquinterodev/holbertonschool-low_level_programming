@@ -6,10 +6,9 @@
 */
 void free_listint2(listint_t **head)
 {
-	listint_t *actual;
+	listint_t *actual = *head;
 	listint_t *next;
 
-	actual = *head;
 	while (actual)
 	{
 		next = actual->next;
