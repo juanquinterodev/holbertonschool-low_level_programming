@@ -1,9 +1,9 @@
 #include "lists.h"
 #include <stdio.h>
 /**
-* print_listint - print all the elements of a list
-* @h: node parameter
-* Return: number of nodes
+* sum_listint - sumatory all the elements of a list
+* @head: node parameter
+* Return: sum of nodes
 */
 int sum_listint(listint_t *head)
 {
