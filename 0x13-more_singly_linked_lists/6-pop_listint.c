@@ -4,7 +4,6 @@
 /**
 * pop_listint - del head node
 *@head: first
-*@n: head nodes data
 *Return: The head nodes data n
 */
 int pop_listint(listint_t **head)
@@ -16,7 +15,7 @@ listint_t *tmp;
 		return (0);
 	tmp = *head;
 	n = tmp->n;
-	free (tmp);
+	free(tmp);
 	*head = (*head)->next;
 	return (n);
 }
