@@ -31,7 +31,7 @@ int _strlen;
 	return (0);
 	}
 	_strlen = read(fd, buf, letters);
-	if (write(STDIN_FILENO, buf, _strlen) != _strlen)
+	if (write(STDOUT_FILENO, buf, _strlen) != _strlen)
 	{
 	return (0);
 	}
