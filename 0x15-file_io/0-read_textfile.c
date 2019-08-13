@@ -36,6 +36,7 @@ int _strlen;
 	return (0);
 	}
 	return (_strlen);
-close(fd);
 free(buf);
+close(fd);
+return (_strlen);
 }
