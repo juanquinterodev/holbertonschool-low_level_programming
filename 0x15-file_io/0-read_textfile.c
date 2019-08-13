@@ -35,7 +35,6 @@ int _strlen;
 	{
 	return (0);
 	}
-	return (_strlen);
 close(fd);
 free(buf);
 return (_strlen);
