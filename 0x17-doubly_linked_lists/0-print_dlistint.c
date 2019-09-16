@@ -11,7 +11,7 @@ int sum = 0;
 
 if (h == NULL)
 {
-return (sum)
+return (sum);
 }
 for (sum = 0; h != NULL; sum++)
 {
