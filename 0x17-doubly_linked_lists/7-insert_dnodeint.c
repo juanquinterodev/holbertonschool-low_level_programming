@@ -30,7 +30,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	unsigned int sum = 0;
 	size_t lennode = 0;
 	dlistint_t *new;
- 	dlistint_t *aux;
+	dlistint_t *aux;
 
 	if (h == NULL)
 		return (NULL);
