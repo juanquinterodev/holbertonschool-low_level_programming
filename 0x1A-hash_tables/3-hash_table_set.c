@@ -3,7 +3,7 @@
 * hash_table_set - adds an element to the hash table
 *
 * @ht: hash table to add
-* 
+*
 * @key: key (can not be an empty string)
 *
 * @value: value (must be duplicated - can be an empty string)
